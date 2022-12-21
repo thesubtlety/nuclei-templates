@@ -1,0 +1,4 @@
+network/cowrie-honeypot-detect.yaml
+network/ftp-default-credentials.yaml
+takeovers/feedpress-takeover.yaml
+takeovers/tictail-takeover.yaml

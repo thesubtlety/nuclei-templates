@@ -4,14 +4,14 @@ info:
   name: GoAnywhere client login detection
   author: iamthefrogy
   severity: info
-  tags: panel
+  tags: panel,goanywhere,login
 
 requests:
   - method: GET
     path:
       - "{{BaseURL}}/webclient/Login.xhtml"
 
-    redirects: true
+    host-redirects: true
     max-redirects: 2
     matchers:
       - type: word

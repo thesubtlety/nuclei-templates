@@ -4,14 +4,16 @@ info:
   name: Detect Gitlab
   author: ehsahil
   severity: info
-  tags: panel
+  metadata:
+    shodan-query: http.title:"GitLab"
+  tags: panel,gitlab
 
 requests:
   - method: GET
     path:
       - "{{BaseURL}}/users/sign_in"
 
-    redirects: true
+    host-redirects: true
     max-redirects: 2
     matchers-condition: and
     matchers:

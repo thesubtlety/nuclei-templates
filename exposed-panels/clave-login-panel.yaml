@@ -4,14 +4,14 @@ info:
   name: Clave login panel
   author: __Fazal
   severity: info
-  tags: panel,clave
+  tags: panel,clave,login
 
 requests:
   - method: GET
     path:
       - '{{BaseURL}}/admin.php'
 
-    redirects: true
+    host-redirects: true
     matchers-condition: and
     matchers:
       - type: status
